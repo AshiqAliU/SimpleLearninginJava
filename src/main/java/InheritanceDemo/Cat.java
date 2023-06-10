@@ -1,6 +1,6 @@
-package java.InheritanceDemo;
+package InheritanceDemo;
 
-public class Cat extends Animal{
+public class Cat extends Animal {
 
     Cat(String name){
         super(name);

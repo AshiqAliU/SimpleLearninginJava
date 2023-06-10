@@ -1,4 +1,4 @@
-package java.InheritanceDemo;
+package InheritanceDemo;
 
 public class InheritanceMainClass {
 
@@ -15,4 +15,5 @@ public class InheritanceMainClass {
         myCat.meow();
 
     }
+
 }
