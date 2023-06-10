@@ -1,6 +1,6 @@
-package java.InheritanceDemo;
+package InheritanceDemo;
 
-public class Dog extends Animal{
+public class Dog extends Animal {
 
     Dog(String name){
         super(name); // call the constructor of the parent class - Animal class
