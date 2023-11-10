@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class EmployeeListManager {
 
-    private ArrayList<Employee> employeeArrayList;
+    private final ArrayList<Employee> employeeArrayList;
 
     public EmployeeListManager(){
         employeeArrayList=new ArrayList<>();
