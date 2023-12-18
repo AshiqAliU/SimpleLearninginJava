@@ -1,5 +1,3 @@
-package java;
-
 public class MethodandMethodOverloadingDemo {
 
     public static void main(String[] args) {

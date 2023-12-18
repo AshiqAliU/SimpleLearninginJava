@@ -1,0 +1,55 @@
+Java 8 introduced significant enhancements to the Collections framework, which revolutionized the way Java developers interact with collections. These changes embraced functional programming concepts, offering more expressive and efficient ways to manipulate collections. Here's a detailed overview:
+
+1. Streams API
+    Overview: Streams represent a sequence of elements supporting sequential and parallel aggregate operations. They do not store elements but carry values from a source (like collections) through a pipeline of computational steps.
+    Key Operations:
+        Intermediate Operations: Transform the stream without consuming it (e.g., filter, map, sorted). They are lazy, meaning they don't start processing until a terminal operation is invoked.
+        Terminal Operations: Consume the stream to produce a result or a side-effect (e.g., forEach, collect, reduce).
+    Parallelism: Streams can be processed in parallel to leverage multi-core architectures, using parallelStream() instead of stream().
+2. Lambda Expressions
+    Purpose: Enable functional programming by allowing concise representation of methods (functions) as an argument, return value, or assigned to a variable.
+    Usage in Collections: Commonly used with the new methods in the Iterable interface, such as forEach, and in stream operations.
+3. Method References
+    Function: Simplify the syntax of lambda expressions when a lambda just calls an existing method.
+    Example: list.forEach(System.out::println) is a method reference equivalent to list.forEach(x -> System.out.println(x)).
+4. Collectors
+    Role: Used in Stream API for mutable reduction operations, such as accumulating elements into collections, summarizing elements, etc.
+    Common Types: toList(), toSet(), toMap(), groupingBy(), joining().
+5. Optional
+    Concept: A container object which may or may not contain a non-null value, used to represent optional values that prevents NullPointerException.
+    Common Methods: isPresent(), ifPresent(), orElse(), orElseGet(), orElseThrow().
+6. New Methods on Collections
+    On List: sort(Comparator), which allows in-place sorting.
+    On Map: getOrDefault(Object key, V defaultValue), forEach(BiConsumer), putIfAbsent(K key, V value), merge(), and more.
+    On Iterable: forEach(Consumer action) to iterate over elements.
+7. Functional Interfaces
+    Purpose: Provide target types for lambda expressions and method references.
+    Key Interfaces: Consumer, Supplier, Predicate, Function.
+    Example: Predicate<T> represents a predicate (boolean-valued function) of one argument.
+8. Default and Static Methods in Interfaces
+    Default Methods: Enable adding new methods to interfaces without breaking existing implementations.
+    Static Methods: Provide utility or helper methods in interfaces.
+9. Enhancements to ConcurrentHashMap
+    New Methods: Include new aggregate operations and concurrent processing methods.
+    Performance: Improved scaling and efficiency for concurrent operations.
+10. Java Time API Integration
+    Collections and Streams: Can be effectively used with the new Date and Time API for temporal-based processing.
+    The introduction of these features in Java 8 marked a paradigm shift in Java programming, encouraging a more functional style of coding and making it easier to process collections in a more expressive and efficient manner. This change significantly improved the readability and maintainability of Java code, especially when dealing with large collections.
+
+
+
+Common Types of Collectors:
+toList() / toSet(): Collect elements into a List or Set.
+toMap(): Collect elements into a Map.
+joining(): Concatenates the input elements into a String.
+groupingBy(): Groups elements by a classifier and returns a Map.
+partitioningBy(): Partitions elements into two groups based on a predicate.
+summarizingInt() / summarizingDouble() / summarizingLong(): Collects statistics, such as count, sum, min, average, and max.
+
+
+
+
+
+
+
+

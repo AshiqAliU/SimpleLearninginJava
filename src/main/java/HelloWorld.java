@@ -1,5 +1,3 @@
-package java;
-
 public class HelloWorld {
 
     static String name="Hello, World";

@@ -1,0 +1,22 @@
+5. Optional
+Concept: A container object which may or may not contain a non-null value, used to represent optional values that prevents NullPointerException.
+Common Methods: isPresent(), ifPresent(), orElse(), orElseGet(), orElseThrow().
+
+
+Optional in Java 8 is a container object used to contain not-null objects. Optional object is used to represent null with absent value. This class has various utility methods to facilitate code to handle values as ‘available’ or ‘not available’ instead of checking null values.
+
+Purpose of Optional
+Avoid NullPointerException: It provides a clear and explicit way to deal with the absence of a value, as opposed to null references which can lead to runtime exceptions.
+Better Semantics: It expresses the intent that a variable can be absent.
+API Design: It's useful in designing robust APIs where you want to clearly convey the absence of a value.
+
+Basic Methods in Optional
+
+of: Creates an Optional with the specified value. The value cannot be null.
+empty: Creates an empty Optional instance.
+ofNullable: Creates an Optional with the specified value, or empty if the value is null.
+isPresent: Returns true if there is a value present, otherwise false.
+ifPresent: If a value is present, performs the given action with the value, otherwise does nothing.
+orElse: Returns the value if present, otherwise returns other.
+orElseGet: Similar to orElse, but the other value is supplied by a Supplier interface.
+orElseThrow: Throws an exception to be created by the provided supplier if the value is not present.

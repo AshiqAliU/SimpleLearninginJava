@@ -1,0 +1,14 @@
+Lambda expressions in Java are a fundamental feature introduced in Java 8. They provide a clear and concise way to represent one method interface using an expression. Lambda expressions are especially useful in collections for implementing simple method interfaces, such as those found in the java.util.function package.
+
+Syntax of Lambda Expressions
+A lambda expression is composed of the following parts:
+
+    Parameter list: It can be a single parameter or multiple parameters enclosed in parentheses.   (a,b,c)
+    Arrow token (->): This symbolically represents the lambda expression.   ->
+    Body: It contains expressions and statements for the lambda expression.
+
+Advantages of Lambda Expressions
+Conciseness: They reduce the boilerplate code required for anonymous classes.
+Readability: They make the code more readable, especially when used with functional interfaces.
+Functional Programming: Enable a more functional style of programming in Java.
+Ease of Use with Collections: Particularly useful when working with collections and streams.
